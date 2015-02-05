@@ -15,6 +15,7 @@ Given a sorted array arr[] of n elements, write a function to search a given ele
 #include "Binary_Search.h"
 #include "selection_sort.h"
 #include "bubble_sort.h"
+#include "merge_sort.h"
 
 
 
@@ -25,7 +26,7 @@ using namespace std;
 
 int main() {
 
-    list<int> aux;
+    vector<int> aux;
 
     aux.push_back(-14);
     aux.push_back(-15);
@@ -37,9 +38,9 @@ int main() {
     aux.push_back(6);
     aux.push_back(5);
 
-    bubble_sort(aux);
+    merge_sort(aux);
 
-    list<int>::iterator i=aux.begin();
+    vector<int>::iterator i=aux.begin();
     for(;i!=aux.end();i++){
         cout<<(*i)<<endl;
     }
