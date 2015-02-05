@@ -14,6 +14,7 @@ Given a sorted array arr[] of n elements, write a function to search a given ele
 
 #include "Binary_Search.h"
 #include "selection_sort.h"
+#include "bubble_sort.h"
 
 
 
@@ -36,9 +37,12 @@ int main() {
     aux.push_back(6);
     aux.push_back(5);
 
-    selection_sort(aux);
+    bubble_sort(aux);
 
-
+    list<int>::iterator i=aux.begin();
+    for(;i!=aux.end();i++){
+        cout<<(*i)<<endl;
+    }
 
 
     return 0;

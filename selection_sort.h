@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void selection_sort(list<int> vec){
+void selection_sort(list<int> & vec){
 
 
     list<int>::iterator i=vec.begin();
@@ -29,13 +29,6 @@ void selection_sort(list<int> vec){
         }
 
     i=vec.begin();
-
-    for(;i!=vec.end();i++){
-        cout<<(*i)<<endl;
-    }
-
-
-
 
 }
 
