@@ -6,10 +6,10 @@ using namespace std;
 
 
 
+template <typename VALUE>
+int partition(vector<VALUE> & vector,int low,int upper){
 
-int partition(vector<int> & vector,int low,int upper){
-
-    int pivot=vector[upper];
+    VALUE pivot=vector[upper];
 
     int smallest=low-1;
     int aux;
@@ -32,8 +32,8 @@ int partition(vector<int> & vector,int low,int upper){
     return smallest+1;
 }
 
-
-void quick_sort(vector<int> & vect,int low,int upper){
+template <typename VALUE>
+void quick_sort(vector<VALUE> & vect,int low,int upper){
     if( low < upper){
         int small=partition(vect,low,upper);
         quick_sort(vect,low,small-1);
@@ -41,8 +41,8 @@ void quick_sort(vector<int> & vect,int low,int upper){
     }
 }
 
-
-void quick_sort(vector<int> & vect){
+template <typename VALUE>
+void quick_sort(vector<VALUE> & vect){
     quick_sort(vect,0,vect.size()-1);
 }
 

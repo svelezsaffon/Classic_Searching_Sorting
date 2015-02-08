@@ -28,7 +28,7 @@ using namespace std;
 int main() {
 
 
-    vector<int> aux;
+    vector<float> aux;
 
     aux.push_back(-14);
     aux.push_back(-15);
@@ -42,7 +42,7 @@ int main() {
 
     quick_sort(aux);
 
-    vector<int>::iterator i=aux.begin();
+    vector<float>::iterator i=aux.begin();
     for(;i!=aux.end();i++){
         cout<<(*i)<<endl;
     }
