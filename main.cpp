@@ -31,13 +31,15 @@ int main() {
 
 
 
-    hand.insert(10, 0);
-    hand.insert(6, 1);
-    hand.insert(6, 2);
-    hand.insert(6, 3);
-    hand.insert(5, 4);
+    hand.insert(11, 0);
+    hand.insert(11, 1);
+    hand.insert(12, 2);
+    hand.insert(12, 3);
+    hand.insert(12, 4);
 
     cout<<hand.have_pair()<<endl;
+    cout<<hand.have_triplet()<<endl;
+    cout<<hand.full_house()<<endl;
 
     /*
     vector<int> aux;
