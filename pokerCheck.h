@@ -71,11 +71,11 @@ public:
         int checkp=0;
         int pair=0;
         for(int i=0;i<5;i++){
-            if(this->hand[i]>0) {
+            if(this->hand[i]>=0) {
 
                 if ((checkp & (1 << this->hand[i]))) {
                     pair = 1;
-                    this->hand[i]=0;
+                    this->hand[i]=-1;
                     break;
                 }
 
@@ -91,7 +91,7 @@ public:
 
         for(int i=0;i<5;i++){
 
-            if(this->hand[i]>0) {
+            if(this->hand[i]>=0) {
                 if ((check & (1 << this->hand[i]))) {
                     if (check2 & (1 << this->hand[i])) {
                         triplet=1;
