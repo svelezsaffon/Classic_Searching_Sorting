@@ -16,6 +16,7 @@ Given a sorted array arr[] of n elements, write a function to search a given ele
 #include "selection_sort.h"
 #include "bubble_sort.h"
 #include "merge_sort.h"
+#include "pokerCheck.h"
 
 
 
@@ -26,6 +27,19 @@ using namespace std;
 
 int main() {
 
+  pokerHand hand;
+
+
+
+    hand.insert(10, 0);
+    hand.insert(6, 1);
+    hand.insert(6, 2);
+    hand.insert(6, 3);
+    hand.insert(5, 4);
+
+    cout<<hand.have_pair()<<endl;
+
+    /*
     vector<int> aux;
 
     aux.push_back(-14);
@@ -44,7 +58,7 @@ int main() {
     for(;i!=aux.end();i++){
         cout<<(*i)<<endl;
     }
-
+*/
 
     return 0;
 }
