@@ -4,16 +4,6 @@
 using namespace std;
 
 
-
-
-
-
-
-
-
-
-
-
 void merge(vector<int> & vect,int l,int m,int r){
     vector<int> L,R;
 

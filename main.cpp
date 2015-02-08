@@ -17,7 +17,7 @@ Given a sorted array arr[] of n elements, write a function to search a given ele
 #include "bubble_sort.h"
 #include "merge_sort.h"
 #include "pokerCheck.h"
-
+#include "quick_sort.h"
 
 
 
@@ -27,21 +27,7 @@ using namespace std;
 
 int main() {
 
-  pokerHand hand;
 
-
-
-    hand.insert(11, 0);
-    hand.insert(11, 1);
-    hand.insert(12, 2);
-    hand.insert(12, 3);
-    hand.insert(12, 4);
-
-    cout<<hand.have_pair()<<endl;
-    cout<<hand.have_triplet()<<endl;
-    cout<<hand.full_house()<<endl;
-
-    /*
     vector<int> aux;
 
     aux.push_back(-14);
@@ -54,13 +40,13 @@ int main() {
     aux.push_back(6);
     aux.push_back(5);
 
-    merge_sort(aux);
+    quick_sort(aux);
 
     vector<int>::iterator i=aux.begin();
     for(;i!=aux.end();i++){
         cout<<(*i)<<endl;
     }
-*/
+
 
     return 0;
 }
